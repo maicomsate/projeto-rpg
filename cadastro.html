@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogadores</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="imagens-videos/loguin-video.mov" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+    <div class="form-container">
+        <div class="form-background">
+            <form id="cadastroForm">
+                <h2>Cadastro de Jogadores</h2>
+                <div class="form-field" id="field-name">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-field" id="field-email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-field" id="field-github">
+                    <label for="github">Link do GitHub:</label>
+                    <input type="url" id="github" name="github">
+                </div>
+                <div class="form-field" id="field-linkedin">
+                    <label for="linkedin">Link do LinkedIn:</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
